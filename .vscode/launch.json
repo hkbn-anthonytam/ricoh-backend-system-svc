@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "PocSvcApplication",
+            "request": "launch",
+            "mainClass": "poc.msa.system.PocSvcApplication",
+            "projectName": "system-svc"
+        },
+        {
+            "type": "java",
+            "name": "PocSvcApplication",
+            "request": "launch",
+            "mainClass": "poc.msa.system.PocSvcApplication",
+            "projectName": "poc-svc"
+        },
+        {
+            "type": "java",
+            "name": "PocSvcApplication",
+            "request": "launch",
+            "mainClass": "poc.msa.system.pocsvc.PocSvcApplication",
+            "projectName": "poc-svc"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PocSvcApplication<poc-svc>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "poc.msa.pocsvc.PocSvcApplication",
+            "projectName": "poc-svc",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

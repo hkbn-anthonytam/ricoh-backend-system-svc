@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: systemsvc
+  namespace: system-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: systemsvc
+  template:
+    metadata:
+      labels:
+        app: systemsvc
+    spec:
+      nodeSelector:
+        kubernetes.io/os: linux
+      containers:
+        - name: systemsvc
+          image: anthonytam.azurecr.io/systemsvc:latest
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: '1'
+              memory: 4G
+            limits:
+              cpu: '256'
+              memory: 11400G
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: systemsvc-service
+  namespace: system-api
+spec:
+  type: LoadBalancer
+  ports:
+    - targetPort: 80
+      name: port8081
+      port: 80
+      protocol: TCP
+  selector:
+    app: systemsvc

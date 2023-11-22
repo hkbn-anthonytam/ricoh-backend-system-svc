@@ -1,0 +1,20 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "1.0.0-1",
+        "author": "Anthony Tam",
+        "changes": [
+          {
+            "sqlFile":{
+              "dbms":"!h2, mssql",
+              "splitStatements":true,
+              "path":"db/changelog/1.0.0-1.sql",
+              "stripComments":true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

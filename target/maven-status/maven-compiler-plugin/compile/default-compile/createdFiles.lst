@@ -1,0 +1,14 @@
+poc\msa\system\PocSvcApplication.class
+poc\msa\system\repository\EstateNameRepository.class
+poc\msa\system\entity\DistrictName.class
+poc\msa\system\config\RestConfiguration.class
+poc\msa\system\repository\EstateRepository.class
+poc\msa\system\entity\District.class
+poc\msa\system\entity\EstateName.class
+poc\msa\system\exception\CustomExceptionHandler.class
+poc\msa\system\entity\Language.class
+poc\msa\system\entity\Estate.class
+poc\msa\system\repository\LanguageRepository.class
+poc\msa\system\repository\DistrictNameRepository.class
+poc\msa\system\repository\DistrictRepository.class
+poc\msa\system\dto\APIErrorResponse.class
